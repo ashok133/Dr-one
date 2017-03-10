@@ -36,6 +36,7 @@ import android.widget.VideoView;
 import android.net.Uri;
 import android.os.Bundle;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 import static android.os.Build.VERSION_CODES.M;
 
 
@@ -78,8 +79,10 @@ public class MainActivity extends Activity {
         });
 
         videob.setOnClickListener(new View.OnClickListener() {
+
+            @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, VideoFeed.class);
+                Intent i = new Intent(MainActivity.this, Temp.class);
                 startActivity(i);
             }
     });

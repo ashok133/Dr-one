@@ -52,7 +52,7 @@
         android:id="@+id/videobutton"
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:onClick="videofeed"/>
+        android:onClick="sendMessage"/>
 
 
 </RelativeLayout>
